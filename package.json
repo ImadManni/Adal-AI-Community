@@ -6,7 +6,10 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "db:init": "node scripts/init-mongodb.js",
+    "db:verify": "node scripts/verify-mongodb.js",
+    "db:sample": "node scripts/init-mongodb.js --sample"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
