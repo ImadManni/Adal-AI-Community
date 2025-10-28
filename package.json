@@ -6,7 +6,12 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "db:init": "npx ts-node scripts/init-db.ts",
+    "db:stats": "npx ts-node scripts/db-utils.ts stats",
+    "db:collections": "npx ts-node scripts/db-utils.ts collections",
+    "db:sample": "npx ts-node scripts/db-utils.ts sample",
+    "db:clean": "npx ts-node scripts/db-utils.ts clean"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
